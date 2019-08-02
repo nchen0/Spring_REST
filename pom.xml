@@ -33,6 +33,13 @@
 			<version>2.9.9</version>
 		</dependency>
 
+		<!--To use post construct past Java 11-->
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>javax.annotation-api</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+
 		<!-- Add Servlet support for 
 			 Spring's AbstractAnnotationConfigDispatcherServletInitializer -->
 		<dependency>
