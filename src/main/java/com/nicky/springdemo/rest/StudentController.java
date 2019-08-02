@@ -32,6 +32,10 @@ public class StudentController {
     // Define an endpoint for retrieving a single student
     @GetMapping("/students/{studentId}")
     public Student getStudent(@PathVariable int studentId) {
+        // Check if there is id
+        if ((studentId >= theStudents.size()) || (studentId < 0)) {
+            throw new StudentNotFoundException("Student id not found - " + studentId);
+        }
         return theStudents.get(studentId);
     }
 }
