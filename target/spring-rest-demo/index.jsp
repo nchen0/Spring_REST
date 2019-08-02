@@ -13,6 +13,6 @@
 <body>
 Spring REST Demo
 <hr>
-<a href="test/hello">GET Mapping</a>
+<a href="api/students">GET Mapping</a>
 </body>
 </html>
